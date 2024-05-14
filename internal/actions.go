@@ -88,7 +88,7 @@ func ActionDownload(config *Config) {
 	// @todo streaming download for big files
 	var buffer bytes.Buffer
 	writer := bufio.NewWriter(&buffer)
-	name, _, err := pkg.DownloadFile(config.Token, *Download, writer, NewDefaultCryptoInfo())
+	name, _, err := pkg.DownloadFile(config.Token, *Download, NewDefaultCryptoInfo(), writer)
 	if err != nil {
 		PrintError(err.Error())
 		return
