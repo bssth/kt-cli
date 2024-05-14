@@ -36,7 +36,7 @@ func (c *CryptoInfo) TryGetReady(token string, disk string) error {
 
 	if c.Password == "" && c.RawCryptoKey == "" {
 		// Crypto data is provided, but password and key are empty
-		return errors.New("no password or decrypted key provided")
+		return errors.New("no password or decrypted key provided (use KT_CLI_PASSWD env or -passwd / -act.keys flag")
 	} else if c.RawCryptoKey == "" {
 		// Password is provided, but the key is empty. We need to get and decrypt the key
 		crypt, err := GetCryptoInfo(token, disk, c.Password)
