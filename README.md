@@ -1,3 +1,5 @@
+## This repository is outdated and no longer maintained.
+
 # ktCloud CLI Client
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/kt-soft-dev/kt-cli#section-directories.svg)](https://pkg.go.dev/github.com/kt-soft-dev/kt-cli#section-directories)
@@ -25,7 +27,7 @@ Also you need `task` installed, you can download it from [here](https://taskfile
 To build the client, run the following commands:
 
 ```bash
-git clone "https://github.com/kt-soft-dev/kt-cli"
+git clone "https://github.com/bssth/kt-cli"
 cd kt-cli
 task build-all
 ```
